@@ -1,1 +1,13 @@
-
+cff-version: 1.2.0
+message: "If you wish to reference this platform, you may cite it as below."
+title: "ZeAnT"
+authors:
+  - family-names: "Ascencio"
+    given-names: "Desiderio"
+    orcid: "https://orcid.org/0000-0003-4056-1876"
+version: 0.1.0
+date-released: 2026-08-31
+doi: 10.5281/zenodo.22217785
+repository-code: "https://github.com/desi-sciencecommunicator/ZeAnT"
+license: MIT   
+abstract: "This platform hosts an adapted version of the Voluseg software developed by Dr. Rubinov's research group, as well as code for registering the max planck zebrafish brain atlas to calcium imaging data. Further downstream analysis, such as cross-correlational or graph theory, can be performed."
