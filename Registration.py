@@ -56,22 +56,22 @@ num_slice = 50
 
 # ------------ body ----------------
 
-import DA_edit_library_registration_cmpk2
+import Registration_Functions
 
 stim = 0
 
 for expt_ID in expt_ID_list:
 
     print('creating_folder ...')
-    output_folder = DA_edit_library_registration_cmpk2.create_folder(ants_folder, proj_ID, expt_ID)
+    output_folder = Registration_Functions.create_folder(ants_folder, proj_ID, expt_ID)
     print('    - DONE\nloading mapzebrain ...')
-    mapZebrain_ants = DA_edit_library_registration_cmpk2.load_mapzebrain_reference_brain(mapzebrain_template_path, save_fig=True, to_save_folder=output_folder)
+    mapZebrain_ants = Registration_Functions.load_mapzebrain_reference_brain(mapzebrain_template_path, save_fig=True, to_save_folder=output_folder)
     # print('MAP: {0}\ntype {1}'.format(mapzebrain_template_path, type(mapzebrain_template_path)))
     print('    - DONE\nloading volume mean ...')
-    volume_mean_ants = DA_edit_library_registration_cmpk2.load_volume_mean(volume_path, pixel_size, depth, num_slice, save_fig=True, to_save_folder=output_folder) 
+    volume_mean_ants = Registration_Functions.load_volume_mean(volume_path, pixel_size, depth, num_slice, save_fig=True, to_save_folder=output_folder) 
     print('    - DONE\nGetting pad widths ...')
 #THIS IS SPECIFICALLY FOR MY CURRENT USE CASE, MAKE MORE DYNAMIC LATER
-    pad_width = DA_edit_library_registration_cmpk2.get_padding_width(mapZebrain_ants, volume_mean_ants, save_fig=True, to_save_folder=output_folder)
+    pad_width = Registration_Functions.get_padding_width(mapZebrain_ants, volume_mean_ants, save_fig=True, to_save_folder=output_folder)
 
     # # ----------------------------- debugging section -----------------------------
 
@@ -86,19 +86,19 @@ for expt_ID in expt_ID_list:
 
     # # ----------------------------- resume to registration -----------------------------
     print('Rigid registration ...')
-    rigid_registration, fixed_norm = DA_edit_library_registration_cmpk2.rigid_registration(mapZebrain_ants, volume_mean_ants, pad_width,output_folder, stim=stim)
+    rigid_registration, fixed_norm = Registration_Functions.rigid_registration(mapZebrain_ants, volume_mean_ants, pad_width,output_folder, stim=stim)
     print('Done with Rigid registration!\n\n------------------\n\n')
     
     # print('Affine registration ...')
-    # affine_registration = DA_edit_library_registration_cmpk2.affine_registration(rigid_registration, fixed_norm, proj_ID, expt_ID, stim=stim)
+    # affine_registration = Registration_Functions.affine_registration(rigid_registration, fixed_norm, proj_ID, expt_ID, stim=stim)
     # print('Done with Affine registration!\n\n------------------\n\n')
 
     # print('Elastic registration ...')
-    # els_registration = DA_edit_library_registration_cmpk2.elastic_registration_confocal(affine_registration, fixed_norm, proj_ID, expt_ID, stim=stim)
+    # els_registration = Registration_Functions.elastic_registration_confocal(affine_registration, fixed_norm, proj_ID, expt_ID, stim=stim)
     # print('Done with Elastic registration!\n\n------------------\n\n')
 
     # print('Creating image ...')
-    # DA_edit_library_registration_cmpk2.create_image(proj_ID, expt_ID, mapZebrain_ants)
+    # Registration_Functions.create_image(proj_ID, expt_ID, mapZebrain_ants)
     # print('Done with creating image!\n\n------------------\n\n')
 
     # print('Done with registration!')
