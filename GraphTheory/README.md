@@ -4,7 +4,7 @@
 \hfill
 
 ### Neighborhood
-$$$N_{i} = { v_{j}: e_{ij} \in E \textbf{or} \ e_{ji} \in E }$$$
+$$$N_{i} = { v_{j}: e_{ij} \in E \thinspace \textbf{or} \ e_{ji} \in E }$$$
 
 Where: $N_i$ is the neighborhood of vertex $i$. $v_i$, $e_{ij}, e_{ji}$ represents the edge between two vertices $i$ and $j$. $v_{j}$ is the vertex connected to vertex i $v_{i}$. And so, we define $k_i$ as $\lvert{N_i}\rvert$, the number of vertices in $N_{i}$, the neighborhood of vertex $v_{i}$
 
