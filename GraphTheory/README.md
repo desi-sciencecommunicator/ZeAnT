@@ -1,5 +1,7 @@
 ### Graph Theory 
 
+\section{Graph Theory Metrics}
+\hfill
 
 \textbf{Neighborhood}
 \begin{equation}
