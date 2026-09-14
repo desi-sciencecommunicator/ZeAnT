@@ -1,2 +1,2 @@
-# ZeAnT
-ZeAnT stands for zebrafish-specific analysis tools, a computational platform that hosts cell-segmentation and brain atlas registration software for high-throughput and large-scale analysis of whole-brain calcium imaging data in zebrafish. This is the accompanying body of work for my Master of Science degree in Computation and Neural Systems at Caltech. Please send any questions you may have to my email desia.thescientist@gmail.com
+# Tail
+The tail activity is used to assess the response to stimuli in the zebrafish, as well as characterizing their spontaneous tail activity. I am hosting the relevant notebooks and scripts used for performing tail analysis. 
