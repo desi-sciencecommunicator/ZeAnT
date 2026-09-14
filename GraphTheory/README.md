@@ -1,20 +1,17 @@
 # Graph Theory 
 
-\section{Graph Theory Metrics}
 \hfill
 
 ### Neighborhood
 $$N_{i} = { v_{j}: e_{ij} \in E \thinspace \textbf{or} \ e_{ji} \in E }$$
 
-Where: $N_i$ is the neighborhood of vertex $i$. $v_i$, $e_{ij}, e_{ji}$ represents the edge between two vertices $i$ and $j$. $v_{j}$ is the vertex connected to vertex i $v_{i}$. And so, we define $k_i$ as $\lvert{N_i}\rvert$, the number of vertices in $N_{i}$, the neighborhood of vertex $v_{i}$
+Where: $N_i$ is the neighborhood of vertex $i$. $v_i$, $e_{ij}, e_{ji}$ represents the edge between two vertices $i$ and $j$. $v_{j}$ is the vertex connected to vertex i $v_{i}$; \thinspace And so, we define $k_i$ as $\lvert{N_i}\rvert$, the number of vertices in $N_{i}$, the neighborhood of vertex $v_{i}$
 
 \hfill
 
-\textbf{Strength}
+### Strength
 
-\begin{equation}
-s_i = \sum_{j=1}^{N}a_{ij}w_{ij}
-\end{equation}
+$$s_i = \sum_{j=1}^{N}a_{ij}w_{ij}$$
 
 Where: $s_i$ is the strength of a specific vertex $i$. $a_{ij}$ establishes if an edge exists between vertex $i$ and vertex $j$. $w_{ij}$ is the weight between vertex $i$ and vertex $j$.
 
