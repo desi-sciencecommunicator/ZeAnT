@@ -1,12 +1,10 @@
-### Graph Theory 
+# Graph Theory 
 
 \section{Graph Theory Metrics}
 \hfill
 
-\textbf{Neighborhood}
-\begin{equation}
-N_{i} = { v_{j}: e_{ij} \in E \textrm{or} \ e_{ji} \in E }
-\end{equation}
+### Neighborhood
+$$$N_{i} = { v_{j}: e_{ij} \in E \textrm{or} \ e_{ji} \in E }$$$
 
 Where: $N_i$ is the neighborhood of vertex $i$. $v_i$, $e_{ij}, e_{ji}$ represents the edge between two vertices $i$ and $j$. $v_{j}$ is the vertex connected to vertex i $v_{i}$. And so, we define $k_i$ as $\lvert{N_i}\rvert$, the number of vertices in $N_{i}$, the neighborhood of vertex $v_{i}$
 
