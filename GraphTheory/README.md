@@ -19,3 +19,4 @@ Where: $s_i$ is the strength of a specific vertex $i$. $a_{ij}$ establishes if a
 If a vertex $v_i$ has $k_i$ neighbors, $\frac{k_i(k_i-1)}{2}$ edges could exist among vertices in its neighborhood. Thus, the local clustering coefficient for undirected graphs can be defined as:
 $$C_{i_{\textrm{weighted}}} = \frac{2\lvert{s_{jk} : v_j, v_k \in N_i, e_{jk} \in E } \rvert}{k_i(k_i - 1)}$$
 
+ ![Graph Theory Result: A cross-correlation matrix is converted into a thresholded adapted weighted matrix. Then, this adapted matrix is converted into an undirected, weighted graph. Here, graph theory metrics can be extracted from the resulting graph.](Graph_Theory_20250326_fish2.png)
