@@ -16,5 +16,8 @@ Once the Voluseg source code /_steps/ files are edited, the following steps shou
 2. Run Voluseg using the ZeAnT_Run_Voluseg.sh script. There is a field where you should specificy the path of the /output/ folder
 
 
+### ZeAnT_Bash_Script.sh
+This is the file that will run the python file that calls Voluseg. Note that directory and file pathways should be manually edited in the file. I noted if I saved or seeked data through a /groups directory file in the Resnick HPC.
+
 ### Notes for developers 
 * The data preparation step using the data_preparation.ipynb notebook can be done in a python script to remove any manual intervention for this preparation step. The single advantage to using the notebook for data preparation is that it is easier to catch any errors in the way the light-sheet sequentially scanned the brain along the z-axis. 
