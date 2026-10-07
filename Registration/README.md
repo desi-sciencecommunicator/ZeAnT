@@ -11,3 +11,10 @@ From the mapzebrain wesbite (https://mapzebrain.org/home), I used the live_stand
 
 ### Registration_Functions.py
 Functions used by the Registration.py file, it hosts relevant functions for using the ANTS library 
+
+
+### Registration.py
+Python file that imports the functions from Registration_Functions.py, and uses them to perform registration on a reference brain atlas file and a mean volume, which is outputted after running Voluseg in the /output folder. The mean volume should have the title volume0.hdf5
+
+### Registration.sh
+Bash file that uses the Resnick HPC for computing. The file calls on the appropriate GPU resources, and then runs the Registration.py file. This file also creates a temporary folder for data management reasons.
